@@ -1,0 +1,9 @@
+p ((Method*)((intptr_t*)$rbp)[-3])->name()->as_C_string()
+$1 = 0x7f7340491140 "productHash"
+(gdb) p ((Method*)((intptr_t*)$rbp)[-3])->klass_name()->as_C_string()
+$2 = 0x7f7340491150 "scala/util/hashing/MurmurHash3"
+
+(gdb) p (((intptr_t*)$rbp)[-7])
+
+p ((Method*)((intptr_t*)$rbp)[-3])->name()->as_C_string()
+run -Xms4g -cp ~/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar:target/scala-2.11/scala-sgx_2.11-0.1.jar MapSGX
